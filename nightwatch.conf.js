@@ -1,7 +1,7 @@
 var env = require('getenv');
-const user = 'My_User',
-  password = 'My_Password',
-  host = 'My_Host.perfectomobile.com';
+const securityToken = 'My_SecurityToken',
+    host = 'MY_Host.perfectomobile.com';
+
 
 module.exports = (function () {
   return {
@@ -18,7 +18,7 @@ module.exports = (function () {
 
       "default": {
         "use_ssl": true,
-        "default_path_prefix": "/nexperience/perfectomobile/wd/hub",
+        "default_path_prefix": "/nexperience/perfectomobile/wd/hub/fast",
         "selenium_port": 443,
         "selenium_host": host,
         "end_session_on_fail": false,
@@ -26,8 +26,7 @@ module.exports = (function () {
         "desiredCapabilities": {
           "browserName": "mobileOS",
           "platformName": "Android",
-          "user": user,
-          "password": password
+          "securityToken": securityToken
         }
 
       }

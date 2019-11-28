@@ -4,7 +4,7 @@
   "description": "A Nightwatch.js example setup for use with Perfecto",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch -e android,ios -c nightwatch.conf.js"
+    "test": "nightwatch -e default -c nightwatch.conf.js"
   },
   "keywords": [
     "perfecto",
@@ -14,7 +14,7 @@
     "fs": "0.0.2",
     "getenv": "^0.6.0",
     "mkdirp": "^0.5.1",
-    "nightwatch": "^0.9.5",
+    "nightwatch": "^1.0.0",
     "perfecto-reporting": "^2.0.0",
     "request": "^2.81.0",
     "selenium-webdriver": "^2.53.3"
