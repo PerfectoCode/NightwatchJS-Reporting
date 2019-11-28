@@ -66,7 +66,7 @@ module.exports = {
     let varSuccess = (browser.currentTest.results.failed == 0) ? true : false;
 
     /**
-     * determines the test's result and pass it to Reporting
+     * determines the test's result and passes it to Reporting
      */
     if (varSuccess) {
       browser.reporting.testStop({
@@ -75,7 +75,7 @@ module.exports = {
     } else {
       browser.reporting.testStop({
         status: Reporting.Constants.results.failed,
-        // Will pass the first error (could be more then one)
+        // Will pass the first error (could be more than one)
         message: browser.currentTest.results.lastError.message.substr(0,4095)
       })
     }
